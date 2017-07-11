@@ -1,0 +1,46 @@
+version: '2'
+
+services:
+
+  data_db:
+    image: "postgres:9.6.3-alpine"
+    container_name: "data-db"
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=data
+      - POSTGRES_PASSWORD=data
+
+  wait_dbs:
+    image: "waisbrot/wait"
+    links:
+      - "data_db:data_db"
+    environment:
+      - TARGETS=data_db:5432
+
+  # Use the latest image built as this is what is under test
+  data_db_setup:
+    image: "hbpmip/mip-cde-data-db-setup:latest"
+    container_name: "mip-cde-data-db-setup"
+    environment:
+      - FLYWAY_DBMS=postgresql
+      - FLYWAY_HOST=db
+      - FLYWAY_PORT=5432
+      - FLYWAY_DATABASE_NAME=data
+      - FLYWAY_USER=data
+      - FLYWAY_PASSWORD=data
+    links:
+     - "data_db:db"
+
+  data_db_check:
+    image: "hbpmip/pgtap:0.96.0-3"
+    container_name: "data-db-check"
+    environment:
+      - HOST=db
+      - PORT=5432
+      - DATABASE=data
+      - USER=data
+      - PASSWORD=data
+    volumes:
+      - ./sql:/test
+    links:
+      - "data_db:db"
