@@ -12,11 +12,11 @@ FROM hbpmip/data-db-setup:1.0.3 as parent-image
 # Build stage for Java classes
 FROM maven:3.5.0-jdk-8-alpine as build-java-env
 
-COPY --from=parent-image /usr/share/jars/setup-data.jar /flyway/jars/
+COPY --from=parent-image /usr/share/jars/data-db-setup.jar /flyway/jars/
 COPY src/main/java/ /project/src/
 
 WORKDIR /project/src
-RUN jar uvf /flyway/jars/setup-data.jar -C . .
+RUN jar uvf /flyway/jars/data-db-setup.jar -C . .
 
 # Final image
 FROM hbpmip/data-db-setup:1.0.3
@@ -26,7 +26,7 @@ ARG VCS_REF
 ARG VERSION
 
 COPY --from=build-stats-env /data /data
-COPY --from=build-java-env /flyway/jars/setup-data.jar /flyway/jars/setup-data.jar
+COPY --from=build-java-env /flyway/jars/data-db-setup.jar /flyway/jars/data-db-setup.jar
 COPY sql/create.sql /flyway/sql/V1_0__create.sql
 COPY docker/run.sh /
 
