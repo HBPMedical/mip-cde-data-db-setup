@@ -1,4 +1,4 @@
-mip_cde_data_db_setup:
+target_image:
   build: Dockerfile
   image: hbpmip/mip-cde-data-db-setup
   pre:

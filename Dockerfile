@@ -7,7 +7,7 @@ RUN pip install --no-cache-dir csvkit==1.0.2 \
     && csvstat /data/values.csv > /data/values.stats
 
 # Recover the jar from the parent image
-FROM hbpmip/data-db-setup:1.0.3 as parent-image
+FROM hbpmip/data-db-setup:1.1.0 as parent-image
 
 # Build stage for Java classes
 FROM maven:3.5.0-jdk-8-alpine as build-java-env
@@ -19,7 +19,7 @@ WORKDIR /project/src
 RUN jar uvf /flyway/jars/data-db-setup.jar -C . .
 
 # Final image
-FROM hbpmip/data-db-setup:1.0.3
+FROM hbpmip/data-db-setup:1.1.0
 
 ARG BUILD_DATE
 ARG VCS_REF

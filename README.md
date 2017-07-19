@@ -1,5 +1,4 @@
-[![CHUV](https://img.shields.io/badge/CHUV-LREN-AF4C64.svg)](https://www.unil.ch/lren/en/home.html) [![License](https://img.shields.io/badge/license-proprietary-AF4C64.svg)](https://github.com/LREN-CHUV/mip-cde-data-db-setup/blob/master/LICENSE)
-[![build status](https://gitlab.com/hbpmip/mip-cde-data-db-setup/badges/master/build.svg)](https://gitlab.com/hbpmip/mip-cde-data-db-setup/commits/master)
+[![CHUV](https://img.shields.io/badge/CHUV-LREN-AF4C64.svg)](https://www.unil.ch/lren/en/home.html) [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/LREN-CHUV/mip-cde-data-db-setup/blob/master/LICENSE) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1d9732c8e10646318e9ace662fd83153)](https://www.codacy.com/app/hbp-mip/mip-cde-data-db-setup?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LREN-CHUV/mip-cde-data-db-setup&amp;utm_campaign=Badge_Grade) [![CircleCI](https://circleci.com/gh/HBPMedical/mip-cde-data-db-setup.svg?style=svg)](https://circleci.com/gh/HBPMedical/mip-cde-data-db-setup)
 
 
 # MIP CDE database setup
