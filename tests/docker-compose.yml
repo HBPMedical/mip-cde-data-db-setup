@@ -32,8 +32,11 @@ services:
     links:
      - "data_db:db"
 
+  # Issues with volume mounting here, workaround by building an image including the sources
   data_db_check:
-    image: "hbpmip/pgtap:0.96.0-3"
+    build:
+      context: .
+      dockerfile: Dockerfile.check
     container_name: "data-db-check"
     environment:
       - HOST=db
@@ -41,7 +44,5 @@ services:
       - DATABASE=data
       - USER=data
       - PASSWORD=data
-    volumes:
-      - ./sql:/test
     links:
       - "data_db:db"
