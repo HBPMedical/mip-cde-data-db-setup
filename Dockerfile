@@ -1,11 +1,3 @@
-# Build stage for statistics
-FROM python:3.6.1-alpine as build-stats-env
-
-COPY sql/values.csv /data/values.csv
-
-RUN pip install --no-cache-dir csvkit==1.0.2 \
-    && csvstat /data/values.csv > /data/values.stats
-
 # Recover the jar from the parent image
 FROM hbpmip/data-db-setup:1.1.0 as parent-image
 
@@ -25,8 +17,8 @@ ARG BUILD_DATE
 ARG VCS_REF
 ARG VERSION
 
-COPY --from=build-stats-env /data /data
 COPY --from=build-java-env /flyway/jars/data-db-setup.jar /flyway/jars/data-db-setup.jar
+COPY sql/values.csv /data/
 COPY sql/create.sql /flyway/sql/V1_0__create.sql
 COPY docker/run.sh /
 
