@@ -45,7 +45,9 @@ cat $variables_file | jq --raw-output '
       "varchar(256)"
     end
   ;
-  .. | .variables? | .[]? | ( .code + ".type=" + (if .type == "real" then
+  .. | .variables? | .[]? | ( .code + ".type=" + (if has("sql_type") then
+    .sql_type
+  elif .type == "real" then
     "numeric"
   elif .type == "integer" then
     "int"
@@ -66,7 +68,7 @@ SET datestyle to 'European';
 
 CREATE TABLE $target_table
 (
-    subjectcode char(20),
+    "subjectcode" char(20),
 EOF
 
 cat $variables_file | jq --raw-output '
@@ -77,7 +79,9 @@ cat $variables_file | jq --raw-output '
       "varchar(256)"
     end
   ;
-  .. | .variables? | .[]? | ( "    !" + .code + "! " + (if .type == "real" then
+  .. | .variables? | .[]? | ( "    !" + .code + "! " + (if has("sql_type") then
+    .sql_type
+  elif .type == "real" then
     "numeric"
   elif .type == "integer" then
     "int"
