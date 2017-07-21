@@ -24,7 +24,7 @@ cat << EOF > src/main/java/eu/humanbrainproject/mip/migrations/columns.propertie
 # Name of the target table
 __TABLE=$target_table
 # Columns of the table
-__COLUMNS=$(cat $variables_file | jq  --raw-output '[(.. | .variables? | .[]? | .code)] | sort | join(",")' )
+__COLUMNS=subjectcode,$(cat $variables_file | jq  --raw-output '[(.. | .variables? | .[]? | .code)] | sort | join(",")' )
 
 # Description of the type and constraints for each column in the table
 subjectcode.type=char(20)
@@ -114,7 +114,7 @@ EOF
 echo "Generated sql/create.sql"
 
 if [ ! -f sql/$dataset.csv ]; then
-  cat $variables_file | jq  --raw-output '[(.. | .variables? | .[]? | .code)] | sort | join(",")' > sql/$dataset.csv
+  echo "subjectcode,$(cat $variables_file | jq  --raw-output '[(.. | .variables? | .[]? | .code)] | sort | join(",")' )" > sql/$dataset.csv
 
   echo "Generated sql/$dataset.csv"
 fi
