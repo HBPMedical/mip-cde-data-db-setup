@@ -18,7 +18,7 @@ ARG VCS_REF
 ARG VERSION
 
 COPY --from=build-java-env /flyway/jars/data-db-setup.jar /flyway/jars/data-db-setup.jar
-COPY sql/values.csv /data/
+COPY sql/empty.csv /data/
 COPY sql/create.sql /flyway/sql/V1_0__create.sql
 COPY docker/run.sh /
 
