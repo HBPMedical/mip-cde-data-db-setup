@@ -19,7 +19,7 @@ ARG VERSION
 
 COPY --from=build-java-env /flyway/jars/data-db-setup.jar /flyway/jars/data-db-setup.jar
 COPY sql/empty.csv /data/
-COPY sql/create.sql /flyway/sql/V1_0__create.sql
+COPY sql/V1_0__create.sql /flyway/sql/
 COPY docker/run.sh /
 
 RUN chmod +x /run.sh
