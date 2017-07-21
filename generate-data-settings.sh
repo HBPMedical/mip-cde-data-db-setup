@@ -4,7 +4,7 @@
 
 variables_file=$1
 target_table="mip_cde_features"
-dataset="my_data"
+dataset="empty"
 
 if ! [ -f "$variables_file" ] ; then
   echo "Generates the configuration settings starting from variables.json file"
@@ -21,16 +21,10 @@ mkdir -p src/main/java/eu/humanbrainproject/mip/migrations/
 cat << EOF > src/main/java/eu/humanbrainproject/mip/migrations/columns.properties
 # suppress inspection "UnusedProperty" for whole file
 
-# Name of the dataset
-__DATASET=$dataset
 # Name of the target table
 __TABLE=$target_table
-# CSV file containing the data to inject in the table
-__CSV_FILE=/data/values.csv
 # Columns of the table
 __COLUMNS=$(cat $variables_file | jq  --raw-output '[(.. | .variables? | .[]? | .code)] | sort | join(",")' )
-# SQL statement to remove all data from a previous execution
-__DELETE_SQL=DELETE FROM $target_table WHERE dataset='$dataset'
 
 # Description of the type and constraints for each column in the table
 subjectcode.type=char(20)
@@ -60,6 +54,22 @@ cat $variables_file | jq --raw-output '
   end))' | sort >> src/main/java/eu/humanbrainproject/mip/migrations/columns.properties
 
 echo "Generated src/main/java/eu/humanbrainproject/mip/migrations/columns.properties"
+
+cat << EOF > src/main/java/eu/humanbrainproject/mip/migrations/${dataset}_dataset.properties
+# suppress inspection "UnusedProperty" for whole file
+
+# Name of the dataset
+__DATASET=$dataset
+# Name of the target table
+__TABLE=$target_table
+# CSV file containing the data to inject in the table
+__CSV_FILE=/data/${dataset}.csv
+# SQL statement to remove all data from a previous execution
+__DELETE_SQL=DELETE FROM $target_table WHERE dataset='$dataset'
+
+EOF
+
+echo "Generated src/main/java/eu/humanbrainproject/mip/migrations/${dataset}_dataset.properties"
 
 mkdir -p sql/
 
@@ -104,6 +114,8 @@ EOF
 
 echo "Generated sql/create.sql"
 
-cat $variables_file | jq  --raw-output '[(.. | .variables? | .[]? | .code)] | sort | join(",")' > sql/values.csv
+if [ ! -f sql/$dataset.csv ]; then
+  cat $variables_file | jq  --raw-output '[(.. | .variables? | .[]? | .code)] | sort | join(",")' > sql/$dataset.csv
 
-echo "Generated sql/values.csv"
+  echo "Generated sql/$dataset.csv"
+fi

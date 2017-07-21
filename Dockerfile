@@ -1,5 +1,5 @@
 # Recover the jar from the parent image
-FROM hbpmip/data-db-setup:1.1.0 as parent-image
+FROM hbpmip/data-db-setup:2.0.0 as parent-image
 
 # Build stage for Java classes
 FROM maven:3.5.0-jdk-8-alpine as build-java-env
@@ -11,7 +11,7 @@ WORKDIR /project/src
 RUN jar uvf /flyway/jars/data-db-setup.jar -C . .
 
 # Final image
-FROM hbpmip/data-db-setup:1.1.0
+FROM hbpmip/data-db-setup:2.0.0
 
 ARG BUILD_DATE
 ARG VCS_REF
@@ -23,6 +23,8 @@ COPY sql/create.sql /flyway/sql/V1_0__create.sql
 COPY docker/run.sh /
 
 RUN chmod +x /run.sh
+
+ENV DATASETS empty_dataset
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="hbpmip/mip-cde-data-db-setup" \
