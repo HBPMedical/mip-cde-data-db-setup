@@ -65,8 +65,7 @@ __TABLE=$target_table
 # CSV file containing the data to inject in the table
 __CSV_FILE=/data/${dataset}.csv
 # SQL statement to remove all data from a previous execution
-__DELETE_SQL=DELETE FROM $target_table WHERE dataset='$dataset'
-
+__DELETE_SQL=DELETE FROM \${table} WHERE dataset='$dataset'
 EOF
 
 echo "Generated src/main/java/eu/humanbrainproject/mip/migrations/${dataset}_dataset.properties"
