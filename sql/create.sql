@@ -201,7 +201,7 @@ CREATE TABLE mip_cde_features
     "rs610932_a" int,
     "rs744373_c" int,
     "set_test_disaacs" int,
-    "subjectagemonths" int,
+    "subjectage" numeric,
     "subjectageyears" int,
     "ticsf_ecrit_mots" int,
     "ticsf_ecrit_phrases" int,
