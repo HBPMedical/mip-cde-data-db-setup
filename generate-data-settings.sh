@@ -72,7 +72,7 @@ echo "Generated src/main/java/eu/humanbrainproject/mip/migrations/${dataset}_dat
 
 mkdir -p sql/
 
-cat << EOF > sql/create.sql
+cat << EOF > sql/V1_0__create.sql
 SET datestyle to 'European';
 
 CREATE TABLE $target_table
@@ -100,9 +100,9 @@ cat $variables_file | jq --raw-output '
     char_type(.)
   else
     char_type(.)
-  end) + ",")' | tr "!" '"' | sort >> sql/create.sql
+  end) + ",")' | tr "!" '"' | sort >> sql/V1_0__create.sql
 
-cat << EOF >> sql/create.sql
+cat << EOF >> sql/V1_0__create.sql
 
     CONSTRAINT pk_$target_table PRIMARY KEY (subjectcode)
 )
@@ -111,7 +111,7 @@ WITH (
 );
 EOF
 
-echo "Generated sql/create.sql"
+echo "Generated sql/V1_0__create.sql"
 
 if [ ! -f sql/$dataset.csv ]; then
   echo "subjectcode,$(cat $variables_file | jq  --raw-output '[(.. | .variables? | .[]? | .code)] | sort | join(",")' )" > sql/$dataset.csv
