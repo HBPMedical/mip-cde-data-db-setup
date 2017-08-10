@@ -1,2 +1,91 @@
+description: "Setup a database with one table containing the Common Data Elements (CDE) defined for MIP"
+
+long_description: |
+  This Docker image manages the database migration scripts for the research-grade data tables used by MIP.
+
+  The research-grade data tables contain the following types of data\:
+
+  * the features (values) for each Common Data Elements (CDE) defined by MIP.
+  * the features extracted from research datasets (ADNI, PPMI...)
+  * the features extracted from clinical data
+
+  Here, we create only the mip_cde_features table that contains the Common Data Elements of MIP.
+
+authors:
+  - author: Ludovic Claude
+    author_email:
+      - ludovic.claude@chuv.ch
+      - ludovic.claude54@gmail.com
+      - ludovic.claude54@googlemail.com
+    organisation: LREN-CHUV
+    organisation_badge: https://img.shields.io/badge/CHUV-LREN-AF4C64.svg
+
+platform: MIP
+component:
+  mip_building_block: reference
+  nature: docker-image
+
+license:
+  name: Apache 2.0
+  badge: https://img.shields.io/badge/license-Apache--2.0-blue.svg
+  url: https://github.com/LREN-CHUV/mip-cde-data-db-setup/blob/master/LICENSE
+
+code_repositories:
+  - name: chuv-gitlab/HBPMedical
+    visibility: private
+    url: https://___.chuv.ch/data-factory/mip-cde-data-db-setup/
+    git_clone: https://___.chuv.ch/data-factory/mip-cde-data-db-setup.git
+  - name: github/LREN-CHUV
+    visibility: public
+    url: https://github.io/LREN-CHUV/mip-cde-data-db-setup/
+    git_clone: https://github.io/LREN-CHUV/mip-cde-data-db-setup.git
+  - name: github/HBPMedical
+    visibility: public
+    url: https://github.io/HBPMedical/mip-cde-data-db-setup/
+    git_clone: https://github.io/HBPMedical/mip-cde-data-db-setup.git
+
+code_quality_checks:
+  codacy:
+    badge: https://api.codacy.com/project/badge/Grade/1d9732c8e10646318e9ace662fd83153
+    url: "https://www.codacy.com/app/hbp-mip/mip-cde-data-db-setup?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LREN-CHUV/mip-cde-data-db-setup&amp;utm_campaign=Badge_Grade"
+
+testing:
+  unit_testing:
+    - sources: /tests
+    - command: /tests/tesh.sh
+
 release_management:
   current_version: 0.6.0
+  current_code_release: https://github.com/HBPMedical/mip-cde-data-db-setup/archive/0.6.0.zip
+  current_docker_release: docker pull hbpmip/mip-cde-data-db-setup:0.6.0
+  release_script: 'publish.sh'
+
+continuous_integration:
+  - name: CircleCI
+    description: "Check style and execute unit tests"
+    url: https://circleci.com/gh/LREN-CHUV/mip-cde-data-db-setup
+    badge: https://circleci.com/gh/LREN-CHUV/mip-cde-data-db-setup.svg?style=svg
+    actions:
+      - code_style
+      - unit_tests
+
+distribution:
+  docker_hub:
+    name: hbpmip/mip-cde-data-db-setup
+    current_tag: 0.6.0
+    url: https://hub.docker.com/r/hbpmip/mip-cde-data-db-setup/
+    badge: https://img.shields.io/badge/docker-hbpmip%2Fdata--db--setup-008bb8.svg
+    command: docker pull hbpmip/mip-cde-data-db-setup:0.6.0
+
+planning:
+  github:
+    name: Issues on Github
+    url: https://github.com/LREN-CHUV/mip-cde-data-db-setup/issues
+
+related_projects:
+  - name: data-db-setup
+    mip_building_block: reference
+    relationship: depend-on-other
+  - name: mip-cde-meta-db-setup
+    mip_building_block: reference
+    relationship: see-also

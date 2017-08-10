@@ -5,6 +5,15 @@
 
 Setup a database with one table containing the Common Data Elements (CDE) defined for MIP.
 
+This Docker image manages the database migration scripts for the research-grade data tables used by MIP.
+
+The research-grade data tables contain the following types of data:
+
+* the features (values) for each Common Data Elements (CDE) defined by MIP.
+* the features extracted from research datasets (ADNI, PPMI...)
+* the features extracted from clinical data
+
+Here, we create only the ```mip_cde_features``` table that contains the Common Data Elements of MIP.
 
 ## How to build the Docker image
 
@@ -19,7 +28,6 @@ This project uses Flyway to manage the database migration scripts for the 'meta-
 This database contains the metadata used for reference, including:
 
 * the list of variables and groups for the Common Data Elements (CDE) defined by MIP.
-* the list of variables and groups for mip-cde
 
 ## Usage
 

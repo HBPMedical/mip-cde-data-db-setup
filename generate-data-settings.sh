@@ -5,6 +5,7 @@
 variables_file=$1
 target_table="mip_cde_features"
 dataset="empty"
+force_dataset_generation=true
 
 if ! [ -f "$variables_file" ] ; then
   echo "Generates the configuration settings starting from variables.json file"
@@ -113,7 +114,7 @@ EOF
 
 echo "Generated sql/V1_0__create.sql"
 
-if [ ! -f sql/$dataset.csv ]; then
+if [ ! -f sql/$dataset.csv ] || [ $force_dataset_generation ]; then
   echo "subjectcode,$(cat $variables_file | jq  --raw-output '[(.. | .variables? | .[]? | .code)] | sort | join(",")' )" > sql/$dataset.csv
 
   echo "Generated sql/$dataset.csv"
