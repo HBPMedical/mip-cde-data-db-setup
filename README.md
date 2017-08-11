@@ -19,16 +19,6 @@ Here, we create only the ```mip_cde_features``` table that contains the Common D
 
 Run: `./build.sh`
 
-# Setup for database 'meta-db' with the selection of variables for mip-cde
-
-## Introduction
-
-This project uses Flyway to manage the database migration scripts for the 'meta-db' database used by MIP.
-
-This database contains the metadata used for reference, including:
-
-* the list of variables and groups for the Common Data Elements (CDE) defined by MIP.
-
 ## Usage
 
 Run:
@@ -41,13 +31,12 @@ where the environment variables are:
 
 * FLYWAY_HOST: database host, default to 'db'.
 * FLYWAY_PORT: database port, default to 5432.
-* FLYWAY_DATABASE_NAME: name of the database or schema, default to 'meta'
+* FLYWAY_DATABASE_NAME: Optional, name of the database or schema, default to 'data'
 * FLYWAY_URL: JDBC url to the database, constructed by default from FLYWAY_DBMS, FLYWAY_HOST, FLYWAY_PORT and FLYWAY_DATABASE_NAME
-* FLYWAY_DRIVER: Fully qualified classname of the jdbc driver (autodetected by default based on flyway.url)
+* FLYWAY_DRIVER: Optional, fully qualified classname of the jdbc driver (autodetected by default based on flyway.url)
 * FLYWAY_USER: database user, default to 'meta'.
 * FLYWAY_PASSWORD: database password, default to 'meta'.
-* FLYWAY_SCHEMAS: Optional, comma-separated list of schemas managed by Flyway
-* FLYWAY_TABLE: Optional, name of Flyway's metadata table (default: schema_version)
+* FLYWAY_SCHEMAS: Optional, comma-separated list of schemas managed by Flyway, default to 'public'
 
 ## Build
 
