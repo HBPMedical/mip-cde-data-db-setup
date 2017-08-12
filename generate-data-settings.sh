@@ -29,7 +29,7 @@ __COLUMNS=subjectcode,$(cat $variables_file | jq  --raw-output '[(.. | .variable
 
 # Description of the type and constraints for each column in the table
 subjectcode.type=char(20)
-subjectcode.is_index=true
+subjectcode.constraints=is_index
 EOF
 
 cat $variables_file | jq --raw-output '
