@@ -24,6 +24,8 @@ else
   DOCKER_COMPOSE="sudo docker-compose"
 fi
 
+trap '$DOCKER_COMPOSE rm -f' SIGINT SIGQUIT
+
 $DOCKER_COMPOSE up -d --remove-orphans data_db
 $DOCKER_COMPOSE run wait_dbs
 $DOCKER_COMPOSE build data_db_check
