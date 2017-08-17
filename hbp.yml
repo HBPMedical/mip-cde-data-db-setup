@@ -55,9 +55,9 @@ testing:
     command: /tests/tesh.sh
 
 release_management:
-  current_version: 0.7.4
-  current_code_release: https://github.com/HBPMedical/mip-cde-data-db-setup/archive/0.7.4.zip
-  current_docker_release: docker pull hbpmip/mip-cde-data-db-setup:0.7.4
+  current_version: 1.0.0
+  current_code_release: https://github.com/HBPMedical/mip-cde-data-db-setup/archive/1.0.0.zip
+  current_docker_release: docker pull hbpmip/mip-cde-data-db-setup:1.0.0
   release_script: 'publish.sh'
 
 continuous_integration:
@@ -72,10 +72,10 @@ continuous_integration:
 distribution:
   docker_hub:
     name: hbpmip/mip-cde-data-db-setup
-    current_tag: 0.7.4
+    current_tag: 1.0.0
     url: https://hub.docker.com/r/hbpmip/mip-cde-data-db-setup/
     badge: https://img.shields.io/badge/docker-hbpmip%2Fdata--db--setup-008bb8.svg
-    command: docker pull hbpmip/mip-cde-data-db-setup:0.7.4
+    command: docker pull hbpmip/mip-cde-data-db-setup:1.0.0
 
 planning:
   github:
