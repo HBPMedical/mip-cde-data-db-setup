@@ -1,6 +1,10 @@
 
 # Changelog
 
+## 1.0.0 - 2017-08-17
+
+* First stable version of this setup, based on data-db-setup version 2.1.0. We will ensure smooth upgrades from now on.
+
 ## 0.7.0 - 2017-08-10
 
 * Remove all CLM-specific variables
