@@ -19,7 +19,7 @@ echo
 
 mkdir -p src/main/java/eu/humanbrainproject/mip/migrations/
 
-cat << EOF > src/main/java/eu/humanbrainproject/mip/migrations/columns.properties
+cat << EOF > src/main/java/eu/humanbrainproject/mip/migrations/${target_table}_columns.properties
 # suppress inspection "UnusedProperty" for whole file
 
 # Name of the target table
