@@ -52,9 +52,9 @@ cat $variables_file | jq --raw-output '
     char_type(.)
   else
     char_type(.)
-  end))' | sort >> src/main/java/eu/humanbrainproject/mip/migrations/columns.properties
+  end))' | sort >> src/main/java/eu/humanbrainproject/mip/migrations/${target_table}_columns.properties
 
-echo "Generated src/main/java/eu/humanbrainproject/mip/migrations/columns.properties"
+echo "Generated src/main/java/eu/humanbrainproject/mip/migrations/${target_table}_columns.properties"
 
 cat << EOF > src/main/java/eu/humanbrainproject/mip/migrations/${dataset}_dataset.properties
 # suppress inspection "UnusedProperty" for whole file
