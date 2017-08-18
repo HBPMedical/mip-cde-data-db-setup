@@ -23,7 +23,7 @@ cat << EOF > src/main/java/eu/humanbrainproject/mip/migrations/${target_table}_c
 # suppress inspection "UnusedProperty" for whole file
 
 # Name of the target table
-__TABLE=$target_table
+__TABLE=${target_table^^}
 # Columns of the table
 __COLUMNS=subjectcode,$(cat $variables_file | jq  --raw-output '[(.. | .variables? | .[]? | .code)] | sort | join(",")' )
 
