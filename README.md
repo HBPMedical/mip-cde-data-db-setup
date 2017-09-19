@@ -38,6 +38,10 @@ where the environment variables are:
 * FLYWAY_PASSWORD: database password, default to 'meta'.
 * FLYWAY_SCHEMAS: Optional, comma-separated list of schemas managed by Flyway, default to 'public'
 
+After execution, you should have:
+
+* A table named **mip_cde_features** where the columns match the MIP CDE variables.
+
 ## Build
 
 Run: `./build.sh`
