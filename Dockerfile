@@ -20,11 +20,9 @@ ARG VERSION
 COPY --from=build-java-env /flyway/jars/data-db-setup.jar /flyway/jars/data-db-setup.jar
 COPY sql/empty.csv /data/
 COPY sql/V1_0__create.sql /flyway/sql/
-COPY docker/run.sh /
 
-RUN chmod +x /run.sh
-
-ENV DATASETS empty
+ENV IMAGE=hbpmip/mip-cde-data-db-setup:1.0.0 \
+    DATASETS=empty
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="hbpmip/mip-cde-data-db-setup" \
