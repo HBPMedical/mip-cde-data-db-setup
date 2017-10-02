@@ -21,7 +21,7 @@ COPY --from=build-java-env /flyway/jars/data-db-setup.jar /flyway/jars/data-db-s
 COPY sql/empty.csv /data/
 COPY sql/V1_0__create.sql /flyway/sql/
 
-ENV IMAGE=hbpmip/mip-cde-data-db-setup:1.0.0 \
+ENV IMAGE=hbpmip/mip-cde-data-db-setup:1.0.1 \
     DATASETS=empty
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
