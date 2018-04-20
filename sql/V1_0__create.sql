@@ -3,8 +3,8 @@ SET datestyle to 'European';
 CREATE TABLE mip_cde_features
 (
     "subjectcode" char(20),
-    "_3rdventricle" numeric,
-    "_4thventricle" numeric,
+    "3rdventricle" numeric,
+    "4thventricle" numeric,
     "adnicategory" varchar(256),
     "agegroup" varchar(256),
     "alzheimerbroadcategory" varchar(256),
@@ -85,7 +85,7 @@ CREATE TABLE mip_cde_features
     "leftventraldc" numeric,
     "minimentalstate" int,
     "montrealcognitiveassessment" int,
-    "neurodegenerativescategories" varchar(256),
+    "neurogenerativescategories" varchar(256),
     "opticchiasm" numeric,
     "parkinsonbroadcategory" varchar(256),
     "pib" numeric,
