@@ -20,7 +20,8 @@ ARG VERSION
 COPY --from=build-java-env /flyway/jars/data-db-setup.jar /flyway/jars/data-db-setup.jar
 COPY sql/empty.csv /data/
 COPY sql/V1_0__create.sql \
-     sql/V1_1__norm_columns.sql /flyway/sql/
+     sql/V1_1__norm_columns.sql \
+     sql/V1_2__fix_typo_columns.sql /flyway/sql/
 
 ENV IMAGE=hbpmip/mip-cde-data-db-setup:$VERSION \
     DATASETS=empty
