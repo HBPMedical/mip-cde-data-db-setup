@@ -2,35 +2,64 @@ version: '2'
 
 services:
 
-  data_db:
+  it_db:
     image: "postgres:9.6.5-alpine"
-    container_name: "data-db"
+    container_name: "it-db"
     restart: unless-stopped
     environment:
-      - POSTGRES_USER=data
-      - POSTGRES_PASSWORD=data
+      - POSTGRES_PASSWORD=test
 
   wait_dbs:
     image: "waisbrot/wait"
     links:
-      - "data_db:data_db"
+      - "it_db:it_db"
     environment:
-      - TARGETS=data_db:5432
-      - TIMEOUT=60
+      TARGETS: it_db:5432
+      TIMEOUT: 60
+
+  create_dbs:
+    image: "hbpmip/create-databases:1.0.0"
+    restart: "no"
+    environment:
+      DB_HOST: it_db
+      DB_PORT: 5432
+      DB_ADMIN_USER: postgres
+      DB_ADMIN_PASSWORD: test
+      DB1: meta
+      USER1: meta
+      PASSWORD1: meta
+      DB2: data
+      USER2: data
+      PASSWORD2: data
+    depends_on:
+      - it_db
+
+  mip_cde_meta_db_setup:
+    image: "hbpmip/mip-cde-meta-db-setup:1.3.1"
+    container_name: "mip-cde-meta-db-setup"
+    environment:
+      FLYWAY_DBMS: postgresql
+      FLYWAY_HOST: db
+      FLYWAY_PORT: 5432
+      FLYWAY_DATABASE_NAME: meta
+      FLYWAY_USER: meta
+      FLYWAY_PASSWORD: meta
+    links:
+    - "it_db:db"
 
   # Use the latest image built as this is what is under test
   data_db_setup:
     image: "hbpmip/mip-cde-data-db-setup:latest"
     container_name: "mip-cde-data-db-setup"
     environment:
-      - FLYWAY_DBMS=postgresql
-      - FLYWAY_HOST=db
-      - FLYWAY_PORT=5432
-      - FLYWAY_DATABASE_NAME=data
-      - FLYWAY_USER=data
-      - FLYWAY_PASSWORD=data
+      FLYWAY_DBMS: postgresql
+      FLYWAY_HOST: db
+      FLYWAY_PORT: 5432
+      FLYWAY_DATABASE_NAME: data
+      FLYWAY_USER: data
+      FLYWAY_PASSWORD: data
     links:
-     - "data_db:db"
+     - "it_db:db"
 
   # Issues with volume mounting here, workaround by building an image including the sources
   data_db_check:
@@ -39,10 +68,15 @@ services:
       dockerfile: Dockerfile.check
     container_name: "data-db-check"
     environment:
-      - HOST=db
-      - PORT=5432
-      - DATABASE=data
-      - USER=data
-      - PASSWORD=data
+      HOST: db
+      PORT: 5432
+      DATABASE: data
+      USER: data
+      PASSWORD: data
+      META_HOST: db
+      META_PORT: 5432
+      META_DATABASE: meta
+      META_USER: meta
+      META_PASSWORD: meta
     links:
-      - "data_db:db"
+      - "it_db:db"

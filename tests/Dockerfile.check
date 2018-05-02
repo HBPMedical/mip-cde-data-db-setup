@@ -1,3 +1,9 @@
 FROM hbpmip/pgtap:0.96.0-5
 
+RUN apk add --update --no-cache jq
+
+COPY docker/check.sh /check.sh
 COPY sql/ /test/
+
+ENTRYPOINT ["/check.sh"]
+CMD [""]
