@@ -1,5 +1,5 @@
 # Recover the jar from the parent image
-FROM hbpmip/data-db-setup:2.2.0 as parent-image
+FROM hbpmip/data-db-setup:2.2.1 as parent-image
 
 # Build stage for Java classes
 FROM maven:3.5.2-jdk-8-alpine as build-java-env
@@ -11,7 +11,7 @@ WORKDIR /project/src
 RUN jar uvf /flyway/jars/data-db-setup.jar -C . .
 
 # Final image
-FROM hbpmip/data-db-setup:2.2.0
+FROM hbpmip/data-db-setup:2.2.1
 
 ARG BUILD_DATE
 ARG VCS_REF
