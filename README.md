@@ -24,7 +24,7 @@ Run: `./build.sh`
 Run:
 
 ```console
-$ docker run -i -t --rm -e FLYWAY_HOST=`hostname` hbpmip/mip-cde-data-db-setup:1.2.1 migrate
+$ docker run -i -t --rm -e FLYWAY_HOST=`hostname` hbpmip/mip-cde-data-db-setup:1.2.2 migrate
 ```
 
 where the environment variables are:
