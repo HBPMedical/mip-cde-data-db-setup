@@ -1,0 +1,1351 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "mip-cde",
+      "path": "mip-cde.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "_3rdventricle",
+            "type": "number",
+            "format": "default",
+            "title": "Third ventricule",
+            "description": "Third ventricule in the brain"
+          },
+          {
+            "name": "_4thventricle",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "ab1_40",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "ab1_42",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "adas",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "adnicategory",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "agegroup",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "albuminelcr",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "alzheimerbroadcategory",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "apoe4",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "arterialhypertensioncomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "av45",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "banquelcr",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "bard",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "basic_activities_of_daily_living_badl",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "bnt",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "bnt_ab",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "bnt_cd",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "borriggelfalcr",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "borrsynth",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "brainstem",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "cancercomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "cardiovascularcomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "cdrscore",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "cerad",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "cerebellarvermallobulesiv",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "cerebellarvermallobulesviiix",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "cerebellarvermallobulesvivii",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "chronicalcoholismcomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "clmcategory",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "clmcategory_y",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "cranialtraumacomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "csfglobal",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "dataset",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "diabetescomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "diagnosticstatus",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "disability_assessment_of_dementia_dad6",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "edsdcategory",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "educationlevel",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "educationyears",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "epilepsycomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "erythrocyteslcr",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "faqtotalscore",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "fardeau_zarit",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "fbfcategory",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "fdg",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "figures_enchevetrees_ben",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "gds",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "gender",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "genericpsychiatricdisordercomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "glucoselcr",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "gs",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "gss",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "hadanxiete",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "haddepression",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "handedness",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "iadl_aivq",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "iati",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "iqcode",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "lactatelcr",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftaccumbensarea",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftacgganteriorcingulategyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftainsanteriorinsula",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftamygdala",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftangangulargyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftaorganteriororbitalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftbasalforebrain",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftcalccalcarinecortex",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftcaudate",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftcerebellumexterior",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftcerebellumwhitematter",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftcerebralwhitematter",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftcocentraloperculum",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftcuncuneus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftententorhinalarea",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftfofrontaloperculum",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftfrpfrontalpole",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftfugfusiformgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftgregyrusrectus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "lefthippocampus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftinflatvent",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftioginferioroccipitalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftitginferiortemporalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftlateralventricle",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftliglingualgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftlorglateralorbitalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftmcggmiddlecingulategyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightmfcmedialfrontalcortex",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftmfcmedialfrontalcortex",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftmfgmiddlefrontalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftmogmiddleoccipitalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftmorgmedialorbitalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftmpogpostcentralgyrusmedialsegment",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftmprgprecentralgyrusmedialsegment",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftmsfgsuperiorfrontalgyrusmedialsegment",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftmtgmiddletemporalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftocpoccipitalpole",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftofugoccipitalfusiformgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftopifgopercularpartoftheinferiorfrontalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftorifgorbitalpartoftheinferiorfrontalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftpallidum",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftpcggposteriorcingulategyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftpcuprecuneus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftphgparahippocampalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftpinsposteriorinsula",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftpogpostcentralgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftpoparietaloperculum",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftporgposteriororbitalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftppplanumpolare",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftprgprecentralgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftptplanumtemporale",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftputamen",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftscasubcallosalarea",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftsfgsuperiorfrontalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftsmcsupplementarymotorcortex",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftsmgsupramarginalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftsogsuperioroccipitalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftsplsuperiorparietallobule",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftstgsuperiortemporalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftthalamusproper",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "lefttmptemporalpole",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "lefttrifgtriangularpartoftheinferiorfrontalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftttgtransversetemporalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "leftventraldc",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "lipidemiacomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "minimentalstate",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "minizarit",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "montrealcognitiveassessment",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "nbreleucocyteslcr",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "neurogenerativescategories",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "neutrophileslcr",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "npi",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "npiq__detresse",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "npiq__severite",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "opticchiasm",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "p_tau",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "parkinsonbroadcategory",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "pib",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "pim",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "ppmicategory",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "primaryaetiologicaldiagnosis",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "profession",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "progressionalzheimerbroadcategory",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "progressionarterialhypertensioncomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "progressioncancercomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "progressioncardiovascularcomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "progressionchronicalcoholismcomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "progressioncranialtraumacomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "progressiondiabetescomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "progressionepilepsycomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "progressiongenericpsychiatricdisordercomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "progressionlipidemiacomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "progressionneurogenerativescategories",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "progressionparkinsonbroadcategory",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "progressionprimaryaetiologicaldiagnosis",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "progressionsecondaryaetiologicaldiagnosis",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "progressionsleepapneasyndromecomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "progressionsmokingcomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "progressionstatusdiagnosis",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "progressionstrokecomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "progressionsyndromicdiagnosis",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "progressiontertiaryaetiologicaldiagnosis",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "progressionthyroiddiseasecomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "proteinestotglcr",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "proteinestotmglcr",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "qpc",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "ratioabeta142abeta140",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightaccumbensarea",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightacgganteriorcingulategyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightainsanteriorinsula",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightamygdala",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightangangulargyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightaorganteriororbitalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightbasalforebrain",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightcalccalcarinecortex",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightcaudate",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightcerebellumexterior",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightcerebellumwhitematter",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightcerebralwhitematter",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightcocentraloperculum",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightcuncuneus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightententorhinalarea",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightfofrontaloperculum",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightfrpfrontalpole",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightfugfusiformgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightgregyrusrectus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "righthippocampus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightinflatvent",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightioginferioroccipitalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightitginferiortemporalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightlateralventricle",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightliglingualgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightlorglateralorbitalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightmcggmiddlecingulategyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightmfcmedialfrontalcortex",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightmfgmiddlefrontalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightmogmiddleoccipitalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightmorgmedialorbitalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightmpogpostcentralgyrusmedialsegment",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightmprgprecentralgyrusmedialsegment",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightmsfgsuperiorfrontalgyrusmedialsegment",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightmtgmiddletemporalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightocpoccipitalpole",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightofugoccipitalfusiformgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightopifgopercularpartoftheinferiorfrontalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightorifgorbitalpartoftheinferiorfrontalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightpallidum",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightpcggposteriorcingulategyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightpcuprecuneus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightphgparahippocampalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightpinsposteriorinsula",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightpogpostcentralgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightpoparietaloperculum",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightporgposteriororbitalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightppplanumpolare",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightprgprecentralgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightptplanumtemporale",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightputamen",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightscasubcallosalarea",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightsfgsuperiorfrontalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightsmcsupplementarymotorcortex",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightsmgsupramarginalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightsogsuperioroccipitalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightsplsuperiorparietallobule",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightstgsuperiortemporalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightthalamusproper",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "righttmptemporalpole",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "righttrifgtriangularpartoftheinferiorfrontalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightttgtransversetemporalgyrus",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rightventraldc",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rs10498633_t",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rs11136000_t",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rs11767557_c",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rs1476679_c",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rs17125944_c",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rs190982_g",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rs2718058_g",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rs3764650_g",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rs3818361_t",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rs3851179_a",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rs3865444_t",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rs610932_a",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "rs744373_c",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "secondaryaetiologicaldiagnosis",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "set_test_disaacs",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "sleepapneasyndromecomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "smokingcomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "strokecomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "subjectage",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "subjectageyears",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "subjectcode",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "syndromicdiagnosis",
+            "type": "string",
+            "format": "default"
+          },
+          {
+            "name": "t_tau",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "tertiaryaetiologicaldiagnosis",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "thyroiddiseasecomorbidity",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "ticsf_ecrit_mots",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "ticsf_ecrit_phrases",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "ticsf_oral_mots",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "ticsf_oral_phrases",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "tiv",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "tmta",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "tmtb",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "updrshy",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "updrstotal",
+            "type": "any",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "keywords": [
+    "cde"
+  ],
+  "name": "mip-cde",
+  "title": "MIP CDE",
+  "description": "MIP common data elements",
+  "homepage": "https://mip.hbp.eu",
+  "version": "0.1.0",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ]
+}
