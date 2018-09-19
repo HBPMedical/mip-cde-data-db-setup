@@ -12,4 +12,4 @@ fi
 BUILD_DATE=$(date -Iseconds) \
   VCS_REF=$(git describe --tags --dirty) \
   VERSION=$(git describe --tags --dirty) \
-  $CAPTAIN build
+  $CAPTAIN build  "$@"
