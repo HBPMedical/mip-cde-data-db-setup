@@ -1,0 +1,853 @@
+{
+  "datasetKey": "dataset",
+  "fields": [
+    {
+      "format": "default",
+      "name": "subjectcode",
+      "required": true,
+      "type": "string",
+      "unique": true
+    },
+    {
+      "format": "default",
+      "name": "subjectageyears",
+      "type": "integer"
+    },
+    {
+      "format": "default",
+      "name": "subjectage",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "gender",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "_3rdventricle",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "_4thventricle",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "rightaccumbensarea",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftaccumbensarea",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightamygdala",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftamygdala",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "brainstem",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "rightcaudate",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftcaudate",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightcerebellumexterior",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "leftcerebellumexterior",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "rightcerebellumwhitematter",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "leftcerebellumwhitematter",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "rightcerebralwhitematter",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "leftcerebralwhitematter",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "csfglobal",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "righthippocampus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "lefthippocampus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightinflatvent",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "leftinflatvent",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "rightlateralventricle",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "leftlateralventricle",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "rightpallidum",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftpallidum",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightputamen",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftputamen",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightthalamusproper",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftthalamusproper",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightventraldc",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftventraldc",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "opticchiasm",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "cerebellarvermallobulesiv",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "cerebellarvermallobulesvivii",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "cerebellarvermallobulesviiix",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "leftbasalforebrain",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "rightbasalforebrain",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "rightacgganteriorcingulategyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftacgganteriorcingulategyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightainsanteriorinsula",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftainsanteriorinsula",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightaorganteriororbitalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftaorganteriororbitalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightangangulargyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftangangulargyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightcalccalcarinecortex",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftcalccalcarinecortex",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightcocentraloperculum",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftcocentraloperculum",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightcuncuneus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftcuncuneus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightententorhinalarea",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftententorhinalarea",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightfofrontaloperculum",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftfofrontaloperculum",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightfrpfrontalpole",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftfrpfrontalpole",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightfugfusiformgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftfugfusiformgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightgregyrusrectus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftgregyrusrectus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightioginferioroccipitalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftioginferioroccipitalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightitginferiortemporalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftitginferiortemporalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightliglingualgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftliglingualgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightlorglateralorbitalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftlorglateralorbitalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightmcggmiddlecingulategyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftmcggmiddlecingulategyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightmfcmedialfrontalcortex",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftmfcmedialfrontalcortex",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightmfgmiddlefrontalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftmfgmiddlefrontalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightmogmiddleoccipitalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftmogmiddleoccipitalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightmorgmedialorbitalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftmorgmedialorbitalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightmpogpostcentralgyrusmedialsegment",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftmpogpostcentralgyrusmedialsegment",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightmprgprecentralgyrusmedialsegment",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftmprgprecentralgyrusmedialsegment",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightmsfgsuperiorfrontalgyrusmedialsegment",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftmsfgsuperiorfrontalgyrusmedialsegment",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightmtgmiddletemporalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftmtgmiddletemporalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightocpoccipitalpole",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftocpoccipitalpole",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightofugoccipitalfusiformgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftofugoccipitalfusiformgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightopifgopercularpartoftheinferiorfrontalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftopifgopercularpartoftheinferiorfrontalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightorifgorbitalpartoftheinferiorfrontalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftorifgorbitalpartoftheinferiorfrontalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightpcggposteriorcingulategyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftpcggposteriorcingulategyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightpcuprecuneus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftpcuprecuneus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightphgparahippocampalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftphgparahippocampalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightpinsposteriorinsula",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftpinsposteriorinsula",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightpoparietaloperculum",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftpoparietaloperculum",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightpogpostcentralgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftpogpostcentralgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightporgposteriororbitalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftporgposteriororbitalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightppplanumpolare",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftppplanumpolare",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightprgprecentralgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftprgprecentralgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightptplanumtemporale",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftptplanumtemporale",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightscasubcallosalarea",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftscasubcallosalarea",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightsfgsuperiorfrontalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftsfgsuperiorfrontalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightsmcsupplementarymotorcortex",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftsmcsupplementarymotorcortex",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightsmgsupramarginalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftsmgsupramarginalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightsogsuperioroccipitalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftsogsuperioroccipitalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightsplsuperiorparietallobule",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftsplsuperiorparietallobule",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightstgsuperiortemporalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftstgsuperiortemporalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "righttmptemporalpole",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "lefttmptemporalpole",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "righttrifgtriangularpartoftheinferiorfrontalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "lefttrifgtriangularpartoftheinferiorfrontalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "rightttgtransversetemporalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "leftttgtransversetemporalgyrus",
+      "type": "number"
+    },
+    {
+      "format": "default",
+      "name": "montrealcognitiveassessment",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "minimentalstate",
+      "type": "integer"
+    },
+    {
+      "format": "default",
+      "name": "agegroup",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "handedness",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "updrstotal",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "updrshy",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "adnicategory",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "edsdcategory",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "ppmicategory",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "alzheimerbroadcategory",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "parkinsonbroadcategory",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "neurodegenerativescategories",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "dataset",
+      "required": true,
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "apoe4",
+      "type": "integer"
+    },
+    {
+      "format": "default",
+      "name": "rs3818361_t",
+      "type": "integer"
+    },
+    {
+      "format": "default",
+      "name": "rs744373_c",
+      "type": "integer"
+    },
+    {
+      "format": "default",
+      "name": "rs190982_g",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "rs1476679_c",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "rs11767557_c",
+      "type": "integer"
+    },
+    {
+      "format": "default",
+      "name": "rs11136000_t",
+      "type": "integer"
+    },
+    {
+      "format": "default",
+      "name": "rs610932_a",
+      "type": "integer"
+    },
+    {
+      "format": "default",
+      "name": "rs3851179_a",
+      "type": "integer"
+    },
+    {
+      "format": "default",
+      "name": "rs17125944_c",
+      "type": "integer"
+    },
+    {
+      "format": "default",
+      "name": "rs10498633_t",
+      "type": "integer"
+    },
+    {
+      "format": "default",
+      "name": "rs3764650_g",
+      "type": "integer"
+    },
+    {
+      "format": "default",
+      "name": "rs3865444_t",
+      "type": "integer"
+    },
+    {
+      "format": "default",
+      "name": "rs2718058_g",
+      "type": "integer"
+    },
+    {
+      "format": "default",
+      "name": "fdg",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "pib",
+      "type": "string"
+    },
+    {
+      "format": "default",
+      "name": "av45",
+      "type": "string"
+    }
+  ],
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": "subjectcode",
+  "tableName": "mip_cde_features"
+}
