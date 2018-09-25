@@ -2,53 +2,94 @@
   "datasetKey": "dataset",
   "fields": [
     {
+      "constraints": {
+        "maxLength": 20,
+        "required": true,
+        "unique": true
+      },
+      "description": "De-identified or anonymized ID for a subject",
       "format": "default",
       "name": "subjectcode",
-      "required": true,
-      "type": "string",
-      "unique": true
+      "type": "string"
     },
     {
+      "constraints": {
+        "maximum": 200,
+        "minimum": 0,
+        "required": true
+      },
+      "description": "Age of the subject, rounded to the closest year",
       "format": "default",
       "name": "subjectageyears",
+      "taxonomy": "/demographics",
+      "title": "Age in years",
       "type": "integer"
     },
     {
+      "constraints": {
+        "maximum": 200.0,
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "subjectage",
       "type": "number"
     },
     {
+      "constraints": {
+        "enum": [
+          "M",
+          "F"
+        ],
+        "required": true
+      },
       "format": "default",
       "name": "gender",
       "type": "string"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "_3rdventricle",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "_4thventricle",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightaccumbensarea",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftaccumbensarea",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightamygdala",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftamygdala",
       "type": "number"
