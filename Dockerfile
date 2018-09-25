@@ -1,11 +1,11 @@
-FROM hbpmip/data-db-setup:2.4.0
+FROM hbpmip/data-db-setup:2.5.1
 
 ARG BUILD_DATE
 ARG VCS_REF
 ARG VERSION
 
 COPY config/ /flyway/config/
-COPY sql/empty.csv /data/
+COPY data/ /data/
 COPY sql/V1_0__create.sql \
      sql/V1_1__norm_columns.sql \
      sql/V1_2__fix_typo_columns.sql \
