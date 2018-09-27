@@ -8,13 +8,14 @@ WORKDIR /data
 
 RUN goodtables validate datapackage.json
 
-FROM hbpmip/data-db-setup:2.5.4
+FROM hbpmip/data-db-setup:2.5.5
 
 ARG BUILD_DATE
 ARG VCS_REF
 ARG VERSION
 
-COPY config/ /flyway/config/
+COPY config/env.sh /
+COPY config/*.tmpl /tmpl/
 COPY data/mip-cde-table-schema.json /data/
 COPY sql/V1_0__create.sql \
      sql/V1_1__norm_columns.sql \
@@ -23,7 +24,7 @@ COPY sql/V1_0__create.sql \
       /flyway/sql/
 
 ENV IMAGE=hbpmip/mip-cde-data-db-setup:$VERSION \
-    DATASETS=empty
+    DATAPACKAGE=/data/datapackage.json
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="hbpmip/mip-cde-data-db-setup" \

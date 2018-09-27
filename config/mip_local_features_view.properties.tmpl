@@ -1,0 +1,10 @@
+# suppress inspection "UnusedProperty" for whole file
+
+# Name of the view
+__VIEW=mip_local_features
+
+# List of tables used in the view
+__TABLES=mip_cde_features,{{ .Env.CUSTOM_FEATURES_TABLE }}
+
+# Template of the SQL statements to execute to create the view
+__SQL_TEMPLATE=join_view.mustache.sql

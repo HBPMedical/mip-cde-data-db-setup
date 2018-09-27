@@ -10,6 +10,7 @@
       "description": "De-identified or anonymized ID for a subject",
       "format": "default",
       "name": "subjectcode",
+      "taxonomy": "/.hidden",
       "type": "string"
     },
     {
@@ -32,6 +33,7 @@
       },
       "format": "default",
       "name": "subjectage",
+      "taxonomy": "/demographics",
       "type": "number"
     },
     {
@@ -44,6 +46,7 @@
       },
       "format": "default",
       "name": "gender",
+      "taxonomy": "/demographics",
       "type": "string"
     },
     {
@@ -95,701 +98,1113 @@
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "brainstem",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightcaudate",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftcaudate",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightcerebellumexterior",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftcerebellumexterior",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightcerebellumwhitematter",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftcerebellumwhitematter",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightcerebralwhitematter",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftcerebralwhitematter",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "csfglobal",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "righthippocampus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "lefthippocampus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightinflatvent",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftinflatvent",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightlateralventricle",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftlateralventricle",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightpallidum",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftpallidum",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightputamen",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftputamen",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightthalamusproper",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftthalamusproper",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightventraldc",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftventraldc",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "opticchiasm",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "cerebellarvermallobulesiv",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "cerebellarvermallobulesvivii",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "cerebellarvermallobulesviiix",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftbasalforebrain",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightbasalforebrain",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightacgganteriorcingulategyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftacgganteriorcingulategyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightainsanteriorinsula",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftainsanteriorinsula",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightaorganteriororbitalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftaorganteriororbitalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightangangulargyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftangangulargyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightcalccalcarinecortex",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftcalccalcarinecortex",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightcocentraloperculum",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftcocentraloperculum",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightcuncuneus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftcuncuneus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightententorhinalarea",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftententorhinalarea",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightfofrontaloperculum",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftfofrontaloperculum",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightfrpfrontalpole",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftfrpfrontalpole",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightfugfusiformgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftfugfusiformgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightgregyrusrectus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftgregyrusrectus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightioginferioroccipitalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftioginferioroccipitalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightitginferiortemporalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftitginferiortemporalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightliglingualgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftliglingualgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightlorglateralorbitalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftlorglateralorbitalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightmcggmiddlecingulategyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftmcggmiddlecingulategyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightmfcmedialfrontalcortex",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftmfcmedialfrontalcortex",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightmfgmiddlefrontalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftmfgmiddlefrontalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightmogmiddleoccipitalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftmogmiddleoccipitalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightmorgmedialorbitalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftmorgmedialorbitalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightmpogpostcentralgyrusmedialsegment",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftmpogpostcentralgyrusmedialsegment",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightmprgprecentralgyrusmedialsegment",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftmprgprecentralgyrusmedialsegment",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightmsfgsuperiorfrontalgyrusmedialsegment",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftmsfgsuperiorfrontalgyrusmedialsegment",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightmtgmiddletemporalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftmtgmiddletemporalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightocpoccipitalpole",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftocpoccipitalpole",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightofugoccipitalfusiformgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftofugoccipitalfusiformgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightopifgopercularpartoftheinferiorfrontalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftopifgopercularpartoftheinferiorfrontalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightorifgorbitalpartoftheinferiorfrontalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftorifgorbitalpartoftheinferiorfrontalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightpcggposteriorcingulategyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftpcggposteriorcingulategyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightpcuprecuneus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftpcuprecuneus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightphgparahippocampalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftphgparahippocampalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightpinsposteriorinsula",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftpinsposteriorinsula",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightpoparietaloperculum",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftpoparietaloperculum",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightpogpostcentralgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftpogpostcentralgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightporgposteriororbitalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftporgposteriororbitalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightppplanumpolare",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftppplanumpolare",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightprgprecentralgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftprgprecentralgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightptplanumtemporale",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftptplanumtemporale",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightscasubcallosalarea",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftscasubcallosalarea",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightsfgsuperiorfrontalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftsfgsuperiorfrontalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightsmcsupplementarymotorcortex",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftsmcsupplementarymotorcortex",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightsmgsupramarginalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftsmgsupramarginalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightsogsuperioroccipitalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftsogsuperioroccipitalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightsplsuperiorparietallobule",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftsplsuperiorparietallobule",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightstgsuperiortemporalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftstgsuperiortemporalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "righttmptemporalpole",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "lefttmptemporalpole",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "righttrifgtriangularpartoftheinferiorfrontalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "lefttrifgtriangularpartoftheinferiorfrontalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "rightttgtransversetemporalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "leftttgtransversetemporalgyrus",
       "type": "number"
     },
     {
+      "constraints": {
+        "maximum": 30,
+        "minimum": 0
+      },
       "format": "default",
       "name": "montrealcognitiveassessment",
-      "type": "string"
+      "type": "integer"
     },
     {
+      "constraints": {
+        "maximum": 24,
+        "minimum": 0
+      },
       "format": "default",
       "name": "minimentalstate",
       "type": "integer"
     },
     {
+      "constraints": {},
       "format": "default",
       "name": "agegroup",
       "type": "string"
     },
     {
+      "constraints": {
+        "enum": [
+          "L",
+          "R",
+          "A"
+        ]
+      },
       "format": "default",
       "name": "handedness",
       "type": "string"
     },
     {
+      "constraints": {
+        "minimum": 0
+      },
       "format": "default",
       "name": "updrstotal",
-      "type": "string"
+      "type": "integer"
     },
     {
+      "constraints": {
+        "minimum": 0
+      },
       "format": "default",
       "name": "updrshy",
-      "type": "string"
+      "type": "integer"
     },
     {
+      "constraints": {},
       "format": "default",
       "name": "adnicategory",
       "type": "string"
     },
     {
+      "constraints": {},
       "format": "default",
       "name": "edsdcategory",
       "type": "string"
     },
     {
+      "constraints": {},
       "format": "default",
       "name": "ppmicategory",
       "type": "string"
     },
     {
+      "constraints": {},
       "format": "default",
       "name": "alzheimerbroadcategory",
       "type": "string"
     },
     {
+      "constraints": {},
       "format": "default",
       "name": "parkinsonbroadcategory",
       "type": "string"
     },
     {
+      "constraints": {},
       "format": "default",
       "name": "neurodegenerativescategories",
       "type": "string"
@@ -801,89 +1216,144 @@
       "type": "string"
     },
     {
+      "constraints": {
+        "enum": [
+          0,
+          1,
+          2
+        ]
+      },
       "format": "default",
       "name": "apoe4",
       "type": "integer"
     },
     {
+      "constraints": {
+        "minimum": 0
+      },
       "format": "default",
       "name": "rs3818361_t",
       "type": "integer"
     },
     {
+      "constraints": {
+        "minimum": 0
+      },
       "format": "default",
       "name": "rs744373_c",
       "type": "integer"
     },
     {
+      "constraints": {
+        "minimum": 0
+      },
       "format": "default",
       "name": "rs190982_g",
-      "type": "string"
+      "type": "integer"
     },
     {
+      "constraints": {
+        "minimum": 0
+      },
       "format": "default",
       "name": "rs1476679_c",
-      "type": "string"
+      "type": "integer"
     },
     {
+      "constraints": {
+        "minimum": 0
+      },
       "format": "default",
       "name": "rs11767557_c",
       "type": "integer"
     },
     {
+      "constraints": {
+        "minimum": 0
+      },
       "format": "default",
       "name": "rs11136000_t",
       "type": "integer"
     },
     {
+      "constraints": {
+        "minimum": 0
+      },
       "format": "default",
       "name": "rs610932_a",
       "type": "integer"
     },
     {
+      "constraints": {
+        "minimum": 0
+      },
       "format": "default",
       "name": "rs3851179_a",
       "type": "integer"
     },
     {
+      "constraints": {
+        "minimum": 0
+      },
       "format": "default",
       "name": "rs17125944_c",
       "type": "integer"
     },
     {
+      "constraints": {
+        "minimum": 0
+      },
       "format": "default",
       "name": "rs10498633_t",
       "type": "integer"
     },
     {
+      "constraints": {
+        "minimum": 0
+      },
       "format": "default",
       "name": "rs3764650_g",
       "type": "integer"
     },
     {
+      "constraints": {
+        "minimum": 0
+      },
       "format": "default",
       "name": "rs3865444_t",
       "type": "integer"
     },
     {
+      "constraints": {
+        "minimum": 0
+      },
       "format": "default",
       "name": "rs2718058_g",
       "type": "integer"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "fdg",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "pib",
-      "type": "string"
+      "type": "number"
     },
     {
+      "constraints": {
+        "minimum": 0.0
+      },
       "format": "default",
       "name": "av45",
-      "type": "string"
+      "type": "number"
     }
   ],
   "missingValues": [
