@@ -35,20 +35,22 @@ function _cleanup() {
 trap _cleanup EXIT INT TERM
 
 $DOCKER_COMPOSE up -d --remove-orphans it_db
+$DOCKER_COMPOSE build data_db_setup
 $DOCKER_COMPOSE build data_db_check
 $DOCKER_COMPOSE run wait_dbs
 $DOCKER_COMPOSE run create_dbs
+$DOCKER_COMPOSE run mip_cde_meta_db_setup
 
 echo
 echo "Test initial database migration"
 $DOCKER_COMPOSE run data_db_setup
-$DOCKER_COMPOSE run mip_cde_meta_db_setup
 echo "Run checks..."
 $DOCKER_COMPOSE run data_db_check
 
 echo
 echo "Test idempotence"
 $DOCKER_COMPOSE run data_db_setup
+echo "Run checks again..."
 $DOCKER_COMPOSE run data_db_check
 
 # Cleanup

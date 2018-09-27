@@ -1,0 +1,8 @@
+FROM hbpmip/mip-cde-data-db-setup
+
+COPY data/sample.csv data/datapackage.json /data/
+
+RUN chmod +x /run.sh
+
+ENV IMAGE=hbpmip/site-data-db-setup:1.0.0 \
+    DATAPACKAGE=/data/datapackage.json

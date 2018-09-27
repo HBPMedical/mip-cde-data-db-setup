@@ -49,7 +49,9 @@ services:
 
   # Use the latest image built as this is what is under test
   data_db_setup:
-    image: "hbpmip/mip-cde-data-db-setup:latest"
+    build:
+      context: .
+      dockerfile: Dockerfile.data
     container_name: "mip-cde-data-db-setup"
     environment:
       FLYWAY_DBMS: postgresql

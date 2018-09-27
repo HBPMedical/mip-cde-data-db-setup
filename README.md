@@ -78,9 +78,6 @@ Dockerfile
 
   COPY data/mip_cde.csv data/site_vars.csv data/datapackage.json /data/
   COPY sql/V1_3_1__custom_vars.sql /flyway/sql/
-  COPY docker/run.sh /
-
-  RUN chmod +x /run.sh
 
   ENV IMAGE=hbpmip/site-data-db-setup:1.0.0 \
       DATAPACKAGE=/data/datapackage.json \
