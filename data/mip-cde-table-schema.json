@@ -16,8 +16,7 @@
     {
       "constraints": {
         "maximum": 200,
-        "minimum": 0,
-        "required": true
+        "minimum": 0
       },
       "description": "Age of the subject, rounded to the closest year",
       "format": "default",
