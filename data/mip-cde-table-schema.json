@@ -1132,7 +1132,7 @@
     },
     {
       "constraints": {
-        "maximum": 24,
+        "maximum": 30,
         "minimum": 0
       },
       "format": "default",
