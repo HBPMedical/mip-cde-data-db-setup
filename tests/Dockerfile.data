@@ -1,3 +1,22 @@
+FROM hbpmip/mip-cde-data-db-setup:1.4.3 as parent-image
+
+# Build stage for quality control
+FROM python:3.6.1-alpine as data-qc-env
+
+RUN apk add --no-cache python3-dev build-base
+RUN pip3 install --no-cache-dir goodtables csvkit==1.0.2
+
+COPY data/ /data/
+WORKDIR /data
+
+# Produce a validation report, plus a readable report if there is an error
+
+COPY --from=parent-image /data/*.json /data/
+RUN goodtables validate -o datapackage.checks --json datapackage.json || goodtables validate datapackage.json
+RUN test $(grep -c "loading error" datapackage.checks) -eq 0
+
+RUN csvstat sample.csv | tee sample.stats
+
 FROM hbpmip/mip-cde-data-db-setup
 
 COPY data/sample.csv data/datapackage.json /data/

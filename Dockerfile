@@ -1,18 +1,17 @@
-FROM python:3.6.6-alpine3.8
+FROM hbpmip/data-db-setup:2.6.0 as parent-image
 
-RUN apk add --no-cache python3-dev build-base
-RUN pip3 install goodtables
+# Build stage for quality control
+FROM python:3.6.1-alpine as data-qc-env
 
-COPY data/ data/
-WORKDIR /data
+RUN pip install json-spec
 
-RUN goodtables validate datapackage.json
+COPY --from=parent-image /schemas/table-schema.schema.json /schemas/
+COPY data/mip-cde-table-schema.json /data/
+RUN json validate --schema-file=/schemas/table-schema.schema.json < /data/mip-cde-table-schema.json
 
-FROM hbpmip/data-db-setup:2.5.5
+# Validation of datapackage is not possible here, as no data are packed in mip-cde-data-db-setup image.
 
-ARG BUILD_DATE
-ARG VCS_REF
-ARG VERSION
+FROM hbpmip/data-db-setup:2.6.0
 
 COPY config/env.sh /
 COPY config/*.tmpl /tmpl/
@@ -22,6 +21,10 @@ COPY sql/V1_0__create.sql \
      sql/V1_2__fix_typo_columns.sql \
      sql/V1_3__add_proteins.sql \
       /flyway/sql/
+
+ARG BUILD_DATE
+ARG VCS_REF
+ARG VERSION
 
 ENV IMAGE=hbpmip/mip-cde-data-db-setup:$VERSION \
     DATAPACKAGE=/data/datapackage.json
