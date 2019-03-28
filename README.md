@@ -24,7 +24,7 @@ The data stored in the feature tables is labelled research-grade as it should ha
 Run:
 
 ```console
-$ docker run -i -t --rm -e FLYWAY_HOST=`hostname` hbpmip/mip-cde-data-db-setup:1.4.4 migrate
+$ docker run -i -t --rm -e FLYWAY_HOST=`hostname` hbpmip/mip-cde-data-db-setup:1.5.0 migrate
 ```
 
 where the environment variables are:
@@ -70,7 +70,7 @@ The Dockerfile for the specialised image should look like:
 Dockerfile
 ```dockerfile
   # Final image
-  FROM hbpmip/mip-cde-data-db-setup:1.4.4
+  FROM hbpmip/mip-cde-data-db-setup:1.5.0
 
   ARG BUILD_DATE
   ARG VCS_REF
