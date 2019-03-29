@@ -35,7 +35,7 @@ services:
       - it_db
 
   mip_cde_meta_db_setup:
-    image: "hbpmip/mip-cde-meta-db-setup:1.3.3"
+    image: "hbpmip/mip-cde-meta-db-setup:1.3.4"
     container_name: "mip-cde-meta-db-setup"
     environment:
       FLYWAY_DBMS: postgresql

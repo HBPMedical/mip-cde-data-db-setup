@@ -1,4 +1,4 @@
-FROM hbpmip/mip-cde-data-db-setup:1.4.3 as parent-image
+FROM hbpmip/mip-cde-data-db-setup:1.5.0 as parent-image
 
 # Build stage for quality control
 FROM python:3.6.1-alpine as data-qc-env
