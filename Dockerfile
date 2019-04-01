@@ -1,4 +1,4 @@
-FROM hbpmip/data-db-setup:2.6.0 as parent-image
+FROM hbpmip/data-db-setup:2.6.1 as parent-image
 
 # Build stage for quality control
 FROM python:3.6.1-alpine as data-qc-env
@@ -11,7 +11,7 @@ RUN json validate --schema-file=/schemas/table-schema.schema.json < /data/mip-cd
 
 # Validation of datapackage is not possible here, as no data are packed in mip-cde-data-db-setup image.
 
-FROM hbpmip/data-db-setup:2.6.0
+FROM hbpmip/data-db-setup:2.6.1
 
 COPY config/env.sh /
 COPY config/*.tmpl /tmpl/
