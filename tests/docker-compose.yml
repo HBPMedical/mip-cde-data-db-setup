@@ -18,7 +18,7 @@ services:
       TIMEOUT: 60
 
   create_dbs:
-    image: "hbpmip/create-databases:1.0.0"
+    image: "hbpmip/create-databases:1.1.0"
     restart: "no"
     environment:
       DB_HOST: it_db
