@@ -1,4 +1,4 @@
-FROM hbpmip/pgtap:1.0.0-1
+FROM hbpmip/pgtap:1.0.0-2
 
 RUN apk add --update --no-cache jq
 
